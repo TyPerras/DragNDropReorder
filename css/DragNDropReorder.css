@@ -1,0 +1,258 @@
+.dragNDropReorderListbox.dragNDropReorderListbox--dragging [role=option][aria-selected=true] .dragNDropReorderListOption__Text {
+	font-style: italic;
+	font-weight: 700;
+}
+
+.dragNDropReorderListItemSelected {
+	background-color: #ecebea !important;
+}
+
+.dragNDropReorderListOption__Text {
+	padding-left: 8px;
+	width: calc(100%);
+}
+
+/* Drag Icon SVG before each list item */
+.DragNDropReorderActivityContainer ul.dragNDropReorderListbox > li::before {
+/*	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z'%3E%3C/path%3E%3C/svg%3E ");*/
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 16v1c0 .5-.4 1-1 1H6c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 16v1c0 .5-.4 1-1 1h-1c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 11v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 11v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 6v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 6v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 1v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1M13 1v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1'%3E%3C/path%3E%3C/svg%3E ");
+	width: 27px;
+	height: 18px;
+	cursor: move;
+}
+
+
+
+
+/* Drag Icon SVG Correct before each list item */
+.DragNDropReorderActivityContainer ul.dragNDropReorderListbox > li.correct::before {
+/*	content: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z'%3E%3C/path%3E%3C/svg%3E ");*/
+	content: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 16v1c0 .5-.4 1-1 1H6c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 16v1c0 .5-.4 1-1 1h-1c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 11v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 11v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 6v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 6v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 1v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1M13 1v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1'%3E%3C/path%3E%3C/svg%3E ");
+}
+
+/* Drag Icon SVG Incorrect before each list item */
+.DragNDropReorderActivityContainer ul.dragNDropReorderListbox > li.incorrect::before {
+/*	content: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5 8C4.44775 8 4 8.44775 4 9C4 9.55225 4.44775 10 5 10H19C19.5522 10 20 9.55225 20 9C20 8.44775 19.5522 8 19 8H5ZM5 14C4.44775 14 4 14.4478 4 15C4 15.5522 4.44775 16 5 16H19C19.5522 16 20 15.5522 20 15C20 14.4478 19.5522 14 19 14H5Z'%3E%3C/path%3E%3C/svg%3E ");*/
+	content: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' data-baseweb='icon' title='Grab' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 16v1c0 .5-.4 1-1 1H6c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 16v1c0 .5-.4 1-1 1h-1c-.6 0-1-.5-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 11v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 11v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 6v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M13 6v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1M8 1v1c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1M13 1v1c0 .6-.4 1-1 1h-1c-.6 0-1-.4-1-1V1c0-.5.4-1 1-1h1c.6 0 1 .5 1 1'%3E%3C/path%3E%3C/svg%3E ");
+}
+
+
+.DragNDropReorderActivityContainer{
+	/*padding: 10px 0px 10px 0px;*/
+}
+
+.dragNDropReorder-assistive-text {
+    clip: rect(0 0 0 0) !important;
+    border: 0 !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+.DragNDropReorderActivityContainer .questionTitle {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	padding: 0.5em 0em 1em 0em;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox {
+	counter-reset: list;
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li {
+	/*margin: 0.5rem 0;
+	padding-bottom: 0rem;*/
+	cursor: grab;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	list-style: none;
+	background-color:#DDDCDC;
+	border-top: 1px solid #797676;
+	border-right: 2px solid #797676;
+	border-bottom: 1px solid #797676;
+	border-left: 2px solid #797676;
+/*	border-radius: 4px;*/
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+/*	margin-bottom: 0.3rem;*/
+	display: flex;
+    align-items: center;
+}
+
+.dragNDropReorderListbox [role=option][draggable=true] {
+    cursor: grab;
+}
+
+/*.dragNDropReorderListbox [role=option]:focus {
+	transition: transform 100ms;
+	transform: scale(1.01);
+	opacity: .9;
+	cursor: grab;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+}*/
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li:last-child {
+/*	padding: 0.5rem 0.5rem 0.5rem 1rem;*/
+	border-bottom: 2px solid #797676;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li:first-child {
+	border-top: 2px solid #797676;
+}
+
+/* Feedback Colors (Hover) */
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li:hover {
+/*	background-color: #ecebea !important;*/
+	transition: transform 100ms;
+	transform: scale(1.01);
+/*	opacity: .9;*/
+	cursor: grab;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+}
+
+/*.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li:focus-within {
+	transition: transform 100ms;
+	transform: scale(1.01);
+	opacity: .9;
+	cursor: grab;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+}*/
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.correct:hover {
+	opacity: .9;
+	background-color: #40845A;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.incorrect:hover {
+	opacity: .9;
+	cursor: grab;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(192,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(192,0,0,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+/* Feedback Colors (Normal) */
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.selected {
+	background-color: #C1DDE4;
+	border: 2px solid #007795;
+	cursor: grab;
+	/*-webkit-box-shadow: 0px 0px 6px 2px rgba(0,119,149,0.32);*/
+	/*box-shadow: 0px 0px 6px 2px rgba(0,119,149,0.32);*/
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #000;
+}
+
+/* Feedback Colors */
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.correct {
+	background-color: #40845A;
+	border-top: 1px solid #295b3c;
+	border-right: 2px solid #295b3c;
+	border-bottom: 1px solid #295b3c;
+	border-left: 2px solid #295b3c;
+	cursor: grab;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32);
+/*	transition: transform 100ms;*/
+/*	transform: scale(1.01);*/
+	color: #fff;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.correct:last-child {
+	border-bottom: 2px solid #295b3c;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.correct:first-child {
+	border-top: 2px solid #295b3c;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.incorrect {
+	background-color: #C00000;
+	border-top: 1px solid #990000;
+	border-right: 2px solid #990000;
+	border-bottom: 1px solid #990000;
+	border-left: 2px solid #990000;
+	cursor: grab;
+/*	-webkit-box-shadow: 0px 0px 6px 2px rgba(232,64,55,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(232,64,55,0.32);*/
+/*	transition: transform 100ms;*/
+/*	transform: scale(1.01);*/
+	color: #fff;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.incorrect:last-child {
+	border-bottom: 2px solid #990000;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li.incorrect:first-child {
+	border-top: 2px solid #990000;
+}
+
+.DragNDropReorderActivityContainer > .DragNDropReorderActivityRoot > div > ul.dragNDropReorderListbox > li span.DNDROfeedback {
+	padding-left: 1em;
+	white-space: nowrap;
+	font-weight: bold;
+	margin-left: auto;
+	width: 7em;
+	flex: 0 0 auto;
+}
+
+/* Check Answer */
+button.btn-submitDragNDropReorderActivity {
+	background-color: #00446E;
+	border-color: #00446E;
+	color: #FFFFFF;
+}
+button.btn-submitDragNDropReorderActivity:hover, button.btn-submitDragNDropReorderActivity:focus {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+	/*box-shadow: none;*/
+}
+
+button.btn-submitDragNDropReorderActivity:not(:disabled):not(.disabled).active:focus, 
+button.btn-submitDragNDropReorderActivity:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+button.btn-submitDragNDropReorderActivity:not(:disabled):not(.disabled).active, 
+button.btn-submitDragNDropReorderActivity:not(:disabled):not(.disabled):active {
+	background-color: #00446E;
+	border-color: #00446E;
+	color: #FFFFFF;
+}
+
+button.btn-submitDragNDropReorderActivity:disabled, button.btn-primary[aria-expanded="true"] {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+}
+
+button.btn-submitDragNDropReorderActivity:disabled:hover, button.btn-submitDragNDropReorderActivity[aria-expanded="true"]:hover {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+	box-shadow: none;
+}
+
