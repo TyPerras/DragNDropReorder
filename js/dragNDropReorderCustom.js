@@ -10,21 +10,6 @@ for (ia = 0, len = dragNDropReorderActivityRoot.length; ia < len; ia++) {
 	dragNDropReorderActivityRoot[ia].setAttribute('id', 'dragNDropReorderActivityRoot' + ia);
 }
 
-///////////////////////////////////////////////////////////////
-// IF THE USER CLICKS ON <span> ELEMENT INSTEAD OF <li> ITEM //
-///////////////////////////////////////////////////////////////
-
-// Click Events are not only applied to the <li> item, it is also applied to all of the children nested inside of the <li> (<label>, <input>, <span>, <div>)
-$('li.slds-p-around_xx-small').click(function(event) {
-	if ($(event.target).is('span')) {
-		// This prevents users from selecting and submitting the wrong element (<span> instead of <li>) into the DragNDrop function
-		// If the <span> is sent to the function it will not be recognized as a target object. It is recognized as "null" instead and breaks the function.
-		event.stopPropagation();
-	}
-});
-
-
-
 
 //////////////////////////////////
 // HIDE BULLET POINT LIST ITEMS //
@@ -150,13 +135,20 @@ $('button.btn-submitDragNDropReorderActivity').click(function(event) {
 // document ready function is needed because the <li> items are generated dynamically after initial page load
 $(document).ready(function(event){
 
+	///////////////////////////////////////////////////////////////
+	// IF THE USER CLICKS ON <span> ELEMENT INSTEAD OF <li> ITEM //
+	///////////////////////////////////////////////////////////////
+
+	$('li.dragNDropReorderListItem').click(function(event) {
+		if ($(event.target).is('span')) {
+			// This prevents users from selecting and submitting the wrong element (<span> instead of <li>) into the DragNDrop function
+			// If the <span> is sent to the function it will not be recognized as a target object. It is recognized as "null" instead and breaks the function.
+			event.stopPropagation();
+		}
+	});
 
 
 	$("li.dragNDropReorderListItem").mousedown(function(event){
-
-
-
-
 
 		if ($(event.target).is('li')) {
 			removeVisualFeedback(event.target);
@@ -204,8 +196,6 @@ $(document).ready(function(event){
 	});
 
 });
-
-
 
 
 
