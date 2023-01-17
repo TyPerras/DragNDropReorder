@@ -10,9 +10,10 @@
 .dragNDropReorderListOption__Text {
 	padding-left: 8px;
 	width: calc(100%);
-	height: 0px;
-    line-height: 0px;
+    line-height: 20px;
     pointer-events: none;
+    /*display: grid;
+    align-content: center;*/
 }
 
 /* Drag Icon SVG before each list item */
@@ -102,6 +103,8 @@
 	display: flex;
     align-items: center;
 }
+
+
 
 .dragNDropReorderListbox [role=option][draggable=true] {
 }
